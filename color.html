@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html land="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="color.css">
+</head>
+
+<body>
+
+    <div class="colors">
+        <span style="--clr:#1dd1a1;" onclick="changeColor('#1dd1a1')"></span>
+        <span style="--clr:#ff6b6b;" onclick="changeColor('#ff6b6b')"></span>
+        <span style="--clr:#2e86de;" onclick="changeColor('#2e86de')"></span>
+        <span style="--clr:#f368e0;" onclick="changeColor('#f368e0')"></span>
+        <span style="--clr:#ff9f43;" onclick="changeColor('#ff9f43')"></span>
+    </div>
+    <div class="box"></div>
+    
+    <script>
+        console.log("outside");
+        function changeColor(color) 
+        {
+            let box = document.querySelector('.box');
+            box.style.background = color;
+            /* document.querySelectorAll('span').forEach(function (item) {
+                event.target.classlist.add('.active');
+            }); */
+
+        }        
+    </script>
+</body>
+
+</html>
